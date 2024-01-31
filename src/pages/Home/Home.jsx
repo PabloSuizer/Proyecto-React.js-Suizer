@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/navBar'
 import CardProducto from '../../components/CardProducto/CardProducto'
-import ItemListContainer from '../../components/ItemsListConteiner/ItemsListConteiner'
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
         <CardProducto />
         <CardProducto />
       </div>
-      <ItemListContainer greeting="¡Bienvenido a nuestra tienda en línea!" />
     </>
   )
 }

@@ -1,0 +1,72 @@
+[
+    {
+      "Id": "1",
+      "name": "Laptop",
+      "descripcion": "Portatil HP con procesador i5 y 8GB de RAM",
+      "precio": "750",
+      "Imagen": "src/assets/Img1.png"
+    },
+    {
+      "Id": "2",
+      "name": "Smartphone",
+      "descripcion": "Samsung Galaxy S21 con pantalla de 6.2 pulgadas",
+      "precio": "1000",
+      "Imagen": "smartphone.jpg"
+    },
+    {
+      "Id": "3",
+      "name": "Tablet",
+      "descripcion": "iPad Air con pantalla Retina de 10.9 pulgadas",
+      "precio": "600",
+      "Imagen": "tablet.jpg"
+    },
+    {
+      "Id": "4",
+      "name": "Smart TV",
+      "descripcion": "LG OLED TV de 55 pulgadas con resolucion 4K",
+      "precio": "1500",
+      "Imagen": "tv.jpg"
+    },
+    {
+      "Id": "5",
+      "name": "Auriculares",
+      "descripcion": "Apple AirPods Pro con cancelacion de ruido",
+      "precio": "250",
+      "Imagen": "auriculares.jpg"
+    },
+    {
+      "Id": "6",
+      "name": "Consola de videojuegos",
+      "descripcion": "PlayStation 5 con capacidad de 825GB",
+      "precio": "500",
+      "Imagen": "consola.jpg"
+    },
+    {
+      "Id": "7",
+      "name": "Camara fotografica",
+      "descripcion": "Canon EOS Rebel T7i con sensor CMOS de 24.2 megapixeles",
+      "precio": "800",
+      "Imagen": "camara.jpg"
+    },
+    {
+      "Id": "8",
+      "name": "Altavoz inteligente",
+      "descripcion": "Amazon Echo Dot (4ta generacion) con asistente de voz Alexa",
+      "precio": "50",
+      "Imagen": "altavoz.jpg"
+    },
+    {
+      "Id": "9",
+      "name": "Reloj inteligente",
+      "descripcion": "Apple Watch Series 6 con GPS y sensor de frecuencia cardiaca",
+      "precio": "400",
+      "Imagen": "reloj.jpg"
+    },
+    {
+      "Id": "10",
+      "name": "Impresora",
+      "descripcion": "Epson EcoTank L3150 con sistema de tanque de tinta",
+      "precio": "300",
+      "Imagen": "impresora.jpg"
+    }
+  ]

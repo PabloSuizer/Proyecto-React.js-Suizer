@@ -1,16 +1,16 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
-
+import { useContext } from "react";
+import iconCart from "../../assets/cart.svg";
+import { CartContext } from "../Context/CartContext";
+import { Link } from "react-router-dom";
 
 const CartWidget = () => {
-    const itemsInCart = 5;
-    return (
+    const {CantTotalProductos} = useContext(CartContext);
 
-        <button className="relative text-white">
-            <FontAwesomeIcon icon={faShoppingBasket} />
-            <span className="bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center absolute -top-1 -right-1">{itemsInCart}</span>
-        </button>
+    return (
+        CantTotalProductos() > 0 ? <Link to={"/cart"} className="btn btn-warning position-relative">
+            <img src={iconCart} alt="Carrito" width={24} />
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{CantTotalProductos()}</span>
+        </Link> : ""
     )
 }
 

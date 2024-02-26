@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import arrayProductos from "../json/producto.json";
 import { Link, useParams } from 'react-router-dom';
-import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
+//import img1 from "../../../src/assets/Bombillas.jpg"
 
 
 const ItemListContainer = () => {

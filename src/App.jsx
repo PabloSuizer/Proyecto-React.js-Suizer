@@ -6,22 +6,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import NavCustom from './components/NavCustom/NavCustom';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Cart from './components/Cart/Cart';
+import CartContextProvider from './components/Context/CartContext';
 
 
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-    <NavCustom/>
-      <Routes>  
-        <Route exact path='/' element={<ItemListContainer />} />
-        <Route exact path='/productos' element={<ItemListContainer />} />
-        <Route exact path='/categoria/:id' element={<ItemListContainer />} />
-        <Route exact path='/item/:id' element={<ItemDetailContainer />} />
-        <Route exact path='*' element={<Navigate to='/' replace />} />
-      </Routes>
-    </BrowserRouter>
+      <CartContextProvider>
+        <BrowserRouter>
+          <NavCustom />
+          <Routes>
+            <Route exact path='/' element={<ItemListContainer />} />
+            <Route exact path='/productos' element={<ItemListContainer />} />
+            <Route exact path='/categoria/:id' element={<ItemListContainer />} />
+            <Route exact path='/item/:id' element={<ItemDetailContainer />} />
+            <Route exact path='/cart' element={<Cart />} />
+            <Route exact path='*' element={<Navigate to='/' replace />} />
+          </Routes>
+        </BrowserRouter>
+      </CartContextProvider>
     </>
   );
 }

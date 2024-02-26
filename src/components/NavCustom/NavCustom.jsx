@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavCustom = () => {
 
-const totalAgregado=5;
 
 
     return (
@@ -16,14 +16,16 @@ const totalAgregado=5;
                             <Link className="nav-link active text-white" aria-current="page" to={"/"}>Inicio</Link>
                         </li>
                         <li className="nav-item ">
-                            <Link className="nav-link text-white" to={"/categoria/Mates Crudos"}>Mates crudos</Link>
+                            <Link className="nav-link text-white" to={"/categoria/MatesCrudos"}>Mates crudos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white" to={"/categoria/Mates Pintados"}>Mates pintados</Link>
+                            <Link className="nav-link text-white" to={"/categoria/MatesPintados"}>Mates pintados</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#"/>
-                            <i className="fas fa-shopping-cart text-white"></i> <span id="cart-quantity">{totalAgregado}</span>
+                            <a className="nav-link text-white" href="#" />
+                            <div className="col-md-1 d-flex align-items-center justify-content-end">
+                                <CartWidget />
+                            </div>
                         </li>
                     </ul>
                 </div>

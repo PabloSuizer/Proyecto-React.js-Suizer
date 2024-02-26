@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const AddButton = ({stock, onAdd}) => {
+const ItemCount = ({stock, onAdd}) => {
     const [counter, setCounter] = useState(1);
     const [itemStock, setItemStock] = useState(stock);
     const [itemAdded, setItemAdded] = useState(false);
@@ -50,7 +50,7 @@ const AddButton = ({stock, onAdd}) => {
                 </div>
             </div>
         </>
-    );
-};
+    )
+}
 
-export default AddButton;
+export default ItemCount;

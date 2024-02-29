@@ -37,16 +37,16 @@ const AddButton = ({stock, onAdd}) => {
         <>
             <div className="row my-1">
                 <div className="col-md-4">
-                    <div className="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" className="btn btn-warning" onClick={decrementar}>-</button>
-                        <button type="button" className="btn btn-warning">{counter}</button>
-                        <button type="button" className="btn btn-warning" onClick={incrementar}>+</button>
+                    <div className="btn-group" role="group" >
+                        <button type="button" className="btn btn-primary text-dark" onClick={decrementar}>-</button>
+                        <button type="button" className="btn btn-primary text-dark">{counter}</button>
+                        <button type="button" className="btn btn-primary text-dark" onClick={incrementar}>+</button>
                     </div>
                 </div>
             </div>
             <div className="row my-1">
                 <div className="col-md-5">
-                    {itemAdded ? <Link to={"/cart"} className="btn btn-warning">Terminar Mi Compra</Link> : <button type="button" className="btn btn-warning" onClick={addToCart}>Agregar al Carrito</button>}
+                    {itemAdded ? <Link to={"/cart"} className="btn btn-primary ">Terminar Mi Compra</Link> : <button type="button" className="btn btn-primary text-dark" onClick={addToCart}>Agregar al Carrito</button>}
                 </div>
             </div>
         </>

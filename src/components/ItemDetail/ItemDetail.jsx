@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { CartContext } from "../Context/CartContext";
 import AddButton from "../AddButton/AddButton";
 
@@ -9,6 +9,12 @@ const ItemDetail = ({ item }) => {
     const onAdd = (quantity) => {
         addItem(item, quantity);
     }
+
+    useEffect(() => {
+        console.log("ItemDetail",item)
+      
+       
+      }, [])
     return (
         <div className="container">
             <div className="row">

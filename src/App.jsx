@@ -8,6 +8,7 @@ import NavCustom from './components/NavCustom/NavCustom';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import CartContextProvider from './components/Context/CartContext';
+import Checkout from './components/Checkout/Checkout';
 
 
 
@@ -23,6 +24,7 @@ function App() {
             <Route exact path='/categoria/:id' element={<ItemListContainer />} />
             <Route exact path='/item/:id' element={<ItemDetailContainer />} />
             <Route exact path='/cart' element={<Cart />} />
+            <Route path={"/checkout"} element={<Checkout />} />
             <Route exact path='*' element={<Navigate to='/' replace />} />
           </Routes>
         </BrowserRouter>

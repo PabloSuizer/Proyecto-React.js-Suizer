@@ -41,10 +41,12 @@ const Cart = () => {
                                         <td><a href="#" onClick={() => {removeItem(product.id)}}><img src={trash} alt="Eliminar Producto" title="Eliminar Producto"  /></a></td>
                                     </tr>
                                 )}
+                                
+
                                 <tr>
-                                    <td colSpan={4}>Suma Total</td>
-                                    <td>${SumaTotalProductos()}</td>
-                                    <td>&nbsp;</td>
+                                    <td className="text-center align-middle" colSpan={4}>&nbsp;</td>
+                                    <td className="text-start align-middle">${SumaTotalProductos()}</td>
+                                    <td className="text-end align-middle"><Link to={"/checkout"} className="btn btn-warning">Checkout</Link></td>
                                 </tr>
                             </tbody>
                         </table>

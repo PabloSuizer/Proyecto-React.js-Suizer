@@ -1,6 +1,5 @@
 [ 
-    {
-      "id":1, 
+    { 
       "title":"Mate Perita", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"../../../src/assets/Bombillas.jpg", 
@@ -8,8 +7,7 @@
       "price":800, 
       "categoria":"MatesCrudos"
     },
-    {
-      "id":2, 
+    { 
       "title":"Mate Acero sin marcar", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"src/assets/Mate de acero sin pintar.jpg", 
@@ -17,8 +15,7 @@
       "price":900, 
       "categoria":"MatesCrudos"
     },
-    {
-      "id":3, 
+    { 
       "title":"Bombillas", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"src/assets/Bombillas.jpg", 
@@ -26,8 +23,7 @@
       "price":650, 
       "categoria":"MatesCrudos"
     },
-    {
-      "id":4, 
+    { 
       "title":"Camionero", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"src/assets/Mate camionero.jpg", 
@@ -35,8 +31,7 @@
       "price":3000, 
       "categoria":"MatesCrudos"
     },
-    {
-      "id":5, 
+    { 
       "title":"Mate Imperial", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"src/assets/Mate Imperial.jpg", 
@@ -44,8 +39,7 @@
       "price":2500, 
       "categoria":"MatesCrudos"
     },
-    {
-      "id":6, 
+    { 
       "title":"Mates de aceros marcados", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"src/assets/Mates de acero.jpg", 
@@ -53,8 +47,7 @@
       "price":4500, 
       "categoria":"MatesPintados"
     },
-    {
-      "id":7, 
+    { 
       "title":"Mate Perita (Floreado)", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"src/assets/Mate perita pintado.jpg", 
@@ -62,8 +55,7 @@
       "price":1200, 
       "categoria":"MatesPintados"
     },
-    {
-      "id":8, 
+    { 
       "title":"Mate Geometrico (Figuras)", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"src/assets/Geometrico Pintado.jpg", 
@@ -71,8 +63,7 @@
       "price":1500, 
       "categoria":"MatesPintados"
     },
-    {
-      "id":9, 
+    { 
       "title":"Cuencos (Floreados)", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"src/assets/Cuencos Pintados.jpg", 
@@ -80,8 +71,7 @@
       "price":900, 
       "categoria":"MatesPintados"
     },
-    {
-      "id":10, 
+    { 
       "title":"Cucharas Pintadas", 
       "description":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", 
       "image":"src/assets/Cucharas Pintadas.jpg", 

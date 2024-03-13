@@ -22,8 +22,7 @@ const NavCustom = () => {
                             <Link className="nav-link text-white" to={"/categoria/MatesPintados"}>Mates pintados</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#" />
-                            <div className="col-md-1 d-flex align-items-center justify-content-end">
+                            <div className="col-md-1 d-flex align-items-center">
                                 <CartWidget />
                             </div>
                         </li>

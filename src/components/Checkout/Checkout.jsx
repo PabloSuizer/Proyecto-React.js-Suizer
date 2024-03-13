@@ -43,18 +43,22 @@ const Checkout = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col text-center">
-                    <h1>Checkout</h1>
+                <div className="col text-start">
+                    <h1 className="h5 mt-5 mb-5">Finalización de compra</h1>
                 </div>
             </div>
+
             <div className="row">
                 {orderId ?
-                    <div className="col text-center">
-                        <div className="alert alert-warning p-5 text-center" role="alert">
-                            <h1>Gracias por tu Compra!</h1>
-                            <p>Tu ID de Compra es: <b>{orderId}</b></p>
+                    <div className="row">
+                        <div className="col mx-auto my-auto">
+                            <div className="alert alert-info p-5 text-center" role="alert">
+                                <h1>Gracias por tu Compra!</h1>
+                                <p>Tu ID de Compra es: <b>{orderId}</b></p>
+                            </div>
                         </div>
-                    </div> :
+                    </div>
+                    :
                     <>
                         <div className="col-md-6">
                             <form>
@@ -70,11 +74,11 @@ const Checkout = () => {
                                     <label className="form-label">Teléfono</label>
                                     <input type="text" className="form-control" onInput={(e) => { setTelefono(e.target.value) }} />
                                 </div>
-                                <button type="button" className="btn btn-warning" onClick={generarOrden}>Generar Orden</button>
+                                <button type="button" className="btn btn-primary text-white" onClick={generarOrden}>Generar Orden</button>
                             </form>
                         </div>
-                        <div className="col-md-6 text-center">
-                            <table className="table">
+                        <div className="col-md-6 text-center ">
+                            <table className="table border border-3 rounded-circle">
                                 <tbody>
                                     {cart.map(product =>
                                         <tr key={product.id}>
@@ -91,11 +95,11 @@ const Checkout = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                        </div> </> }
-                    </div>
-                
+                        </div> </>}
             </div>
-            )
+
+        </div>
+    )
 }
 
-            export default Checkout;
+export default Checkout;

@@ -9,6 +9,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Cart from './components/Cart/Cart';
 import CartContextProvider from './components/Context/CartContext';
 import Checkout from './components/Checkout/Checkout';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path={"/checkout"} element={<Checkout />} />
             <Route exact path='*' element={<Navigate to='/' replace />} />
           </Routes>
+          <Footer className="fixed-top"/>
         </BrowserRouter>
       </CartContextProvider>
     </>
